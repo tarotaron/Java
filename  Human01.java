@@ -15,6 +15,7 @@ public class Human01{
 	}
 
 	public String getProfile() {
+		// String型の戻り値を返す
 		return "年齢は" + this.age + "職業は" + this.profession;
 	}
 
@@ -27,9 +28,15 @@ public class Human01{
 	// 	this.age = age;
 	// }
 
+	// メソッド内での宣言した変数はインスタンス変数と不別する為ローカル変数とよぶ
 	public void greet(String friend) {
 		if(friend == null) {
-			System.out.println("挨拶する友達がわかりません！");
+			// System.out.println("挨拶する友達がわかりません！");
+			// 戻り値を戻すreturn文 returnの後ろに戻り値を指定
+			// メソッド名の前に定義した戻り値型である必要がある。
+			// 戻り値を返さない場合戻り値型にvoidを指定
+
+			// nullの場合処理を終了する為returnをする
 			return;
 		}
 		System.out.println(friend + "さん、こんにちは！");

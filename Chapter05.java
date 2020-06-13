@@ -12,7 +12,6 @@ public class Chapter05 {
 		do {
 			ブロック(繰り返し)
 		} while(条件式);
-
 	//for=指定した回数処理を繰り返す
 		for(初期化式 int number = 1; 条件式 number <= 5; 変化式 number++) {
 			System.out.println("For01 = " + number);
